@@ -2,6 +2,7 @@ package tech.ada.java.usuario;
 
 import java.time.LocalDate;
 import java.util.UUID;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,7 @@ public class Usuario {
 
     private final UUID uuid;
     private String nome;
+    @Setter(AccessLevel.PRIVATE)
     private String email;
     private LocalDate dataNascimento;
 
